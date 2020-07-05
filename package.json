@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https:git@github.com/esatterwhite/release-project.git"
+    "url": "git+ssh://git@github.com/esatterwhite/release-project.git"
   },
   "keywords": [
     "semantic"
@@ -43,6 +43,7 @@
       ["@semantic-release/changelog", {
         "changelogFile": "CHANGELOG.md"
       }]
+    , "@semantic-release/git"
     ]
   }
 }
