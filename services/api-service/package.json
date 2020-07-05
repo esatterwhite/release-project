@@ -16,18 +16,6 @@
     "branches": [
       "master"
     ],
-    "verifyConfig": [
-      "@iteratec/semantic-release-docker"
-    ],
-    "prepare": [{
-      "imageName": "api-server",
-      "path": "@iteratec/semantic-release-docker",
-      "repositoryName": "esatterwhite",
-      "registryUrl": "quay.io"
-    }],
-    "publish": [{
-      "path": "@iteratec/semantic-release-docker"
-    }],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
@@ -37,12 +25,15 @@
           "changelogFile": "CHANGELOG.md"
         }
       ],
-      "@iteratec/semantic-release-docker",
+      ["sematic-release-docker", {
+        "name": "esatterwhite/api-service",
+        "registryUrl": "quay.io"
+      }],
       "@semantic-release/git"
     ]
   },
   "devDependencies": {
-    "@iteratec/semantic-release-docker": "^1.0.5",
+    "semantic-release-docker": "^2.2.0",
     "tap": "^14.10.7"
   }
 }
