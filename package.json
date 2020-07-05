@@ -1,11 +1,12 @@
 {
-  "name": "release-project",
+  "name": "@esatterwhite/release-project",
   "version": "0.0.0-development",
   "description": "Test release project",
   "main": "index.js",
   "scripts": {
     "test": "tap",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "multi-semantic-release": "multi-semantic-release"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,7 @@
   "keywords": [
     "semantic"
   ],
+  "workspaces": ["services/api-service"],
   "author": "Eric Satterwhite <esatterwhite@wir.rr.com>",
   "license": "MIT",
   "bugs": {
@@ -21,9 +23,26 @@
   },
   "homepage": "https://github.com/esatterwhite/release-project#readme",
   "publishConfig": {
-    "access": "restricted"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "semantic-release": "^17.1.1"
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "multi-semantic-release": "^2.0.1",
+    "semantic-release": "^17.1.1",
+    "tap": "^14.10.7"
+  },
+  "tap": {},
+  "release": {
+    "dryRun": false,
+    "branches": ["master"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      ["@semantic-release/changelog", {
+        "changelogFile": "CHANGELOG.md"
+      }]
+    ]
   }
 }
