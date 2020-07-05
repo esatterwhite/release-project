@@ -1,0 +1,29 @@
+{
+  "name": "release-project",
+  "version": "0.0.0-development",
+  "description": "Test release project",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https:git@github.com/esatterwhite/release-project.git"
+  },
+  "keywords": [
+    "semantic"
+  ],
+  "author": "Eric Satterwhite <esatterwhite@wir.rr.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esatterwhite/release-project/issues"
+  },
+  "homepage": "https://github.com/esatterwhite/release-project#readme",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.1.1"
+  }
+}
