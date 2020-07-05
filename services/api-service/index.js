@@ -26,5 +26,3 @@ if (require.main === module) {
   server.listen(PORT)
 }
 
-
-

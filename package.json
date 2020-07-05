@@ -15,7 +15,9 @@
   "keywords": [
     "semantic"
   ],
-  "workspaces": ["services/api-service"],
+  "workspaces": [
+    "services/api-service"
+  ],
   "author": "Eric Satterwhite <esatterwhite@wir.rr.com>",
   "license": "MIT",
   "bugs": {
@@ -36,14 +38,20 @@
   "tap": {},
   "release": {
     "dryRun": false,
-    "branches": ["master"],
+    "branches": [
+      "master"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@semantic-release/changelog", {
-        "changelogFile": "CHANGELOG.md"
-      }]
-    , "@semantic-release/git"
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/git"
     ]
-  }
+  },
+  "dependencies": {}
 }
