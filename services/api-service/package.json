@@ -1,1 +1,37 @@
-{"name":"api-service","private":true,"version":"0.0.0-development","description":"api service","main":"index.js","scripts":{"test":"tap"},"keywords":[],"author":"Eric Satterwhite","license":"MIT","tap":{},"release":{"verifyConfig":["@iteratec/semantic-release-docker"],"plugins":[["@iteratec/semantic-release-docker",{"imageName":"api-server","repositoryName":"esatterwhite","registryUrl":"quay.io"}]]},"devDependencies":{"tap":"^14.10.7"},"dependencies":{"semantic-release-docker":"^2.2.0"},"peerDependencies":{},"optionalDependencies":{}}
+{
+  "name": "api-service",
+  "private": true,
+  "version": "0.0.0-development",
+  "description": "api service",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap"
+  },
+  "keywords": [],
+  "author": "Eric Satterwhite",
+  "license": "MIT",
+  "tap": {},
+  "release": {
+    "dryRun": false,
+    "branches": ["master"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      ["@semantic-release/changelog", {
+        "changelogFile": "CHANGELOG.md"
+      }],
+      ["@iteratec/semantic-release-docker", {
+        "imageName": "api-server",
+        "repositoryName": "esatterwhite",
+        "registryUrl": "quay.io"
+      }],
+    "@semantic-release/git"
+    ]
+  },
+  "devDependencies": {
+    "tap": "^14.10.7"
+  },
+  "dependencies": {
+    "semantic-release-docker": "^2.2.0"
+  }
+}
