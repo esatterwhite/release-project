@@ -14,7 +14,7 @@
   "release": {
     "dryRun": false,
     "branches": [
-      "master"
+      "master", "esatterwhite/FAKE-0004"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -25,14 +25,19 @@
           "changelogFile": "CHANGELOG.md"
         }
       ],
-      ["sematic-release-docker", {
-        "name": "esatterwhite/api-service",
-        "registryUrl": "quay.io"
-      }],
+      [
+        "@esatterwhite/semantic-release-docker",
+        {
+          "registry": "quay.io",
+          "project": "esatterwhite",
+          "tags": []
+        }
+      ],
       "@semantic-release/git"
     ]
   },
   "devDependencies": {
+    "@esatterwhite/semantic-release-docker": "link:../../packages/sementic-release-docker",
     "semantic-release-docker": "^2.2.0",
     "tap": "^14.10.7"
   }

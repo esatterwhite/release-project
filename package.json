@@ -35,23 +35,5 @@
     "semantic-release": "^17.1.1",
     "tap": "^14.10.7"
   },
-  "tap": {},
-  "release": {
-    "dryRun": false,
-    "branches": [
-      "master"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md"
-        }
-      ],
-      "@semantic-release/git"
-    ]
-  },
-  "dependencies": {}
+  "tap": {}
 }
