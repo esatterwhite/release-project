@@ -1,7 +1,7 @@
 devDependencies:
   '@semantic-release/changelog': 5.0.1_semantic-release@17.1.1
   '@semantic-release/git': 9.0.0_semantic-release@17.1.1
-  multi-semantic-release: 2.0.1
+  multi-semantic-release: 2.1.0
   semantic-release: 17.1.1_semantic-release@17.1.1
   tap: 14.10.7
 lockfileVersion: 5.1
@@ -2391,7 +2391,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
-  /multi-semantic-release/2.0.1:
+  /multi-semantic-release/2.1.0:
     dependencies:
       bash-glob: 2.0.0
       blork: 9.2.2
@@ -2412,7 +2412,7 @@ packages:
       yarn: '>=1.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-LpH2ng2NjuXfQ/HDtQJfigKBDENv7hR7yUV3AhOUiSA3cmha7F7ALW05JjMUiBCcxt7j/LPNFFTMJV8wOjgmsA==
+      integrity: sha512-oAiUSEcE0UWCayYnFsS3hy19y8xvTCcmVz8RiHROCHEILS5A/O8ZJsEN29BU2JKahohbzpCzTUIKZk8M4SIAFQ==
   /neo-async/2.6.1:
     dev: true
     resolution:
@@ -4117,6 +4117,6 @@ packages:
 specifiers:
   '@semantic-release/changelog': ^5.0.1
   '@semantic-release/git': ^9.0.0
-  multi-semantic-release: ^2.0.1
+  multi-semantic-release: ^2.1.0
   semantic-release: ^17.1.1
   tap: ^14.10.7

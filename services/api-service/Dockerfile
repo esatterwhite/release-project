@@ -1,12 +1,15 @@
 # 0000-BASE
-FROM node:12 as base
+FROM us.gcr.io/logdna-k8s/node:12 as base
 
-WORKDIR /opt/app
+WORKDIR /opt/services/app
 
+COPY ./packages/ /opt/packages
+COPY ./pnpm-lock.yaml ./package.json /opt/services/app/
 
-COPY ./pnpm-lock.yaml ./package.json /opt/app/
 RUN npx pnpm install
-COPY . /opt/app
+COPY ./services/api-service /opt/services/app
+
+RUN ls -alh /opt
 
 # 0001-RELEASE
 # RELEASE
@@ -18,9 +21,10 @@ RUN groupadd --gid 1000 api \
 COPY --from=base /usr/local/bin /usr/local/bin
 COPY --from=base /usr/local/include/node /usr/local/include
 COPY --from=base /usr/local/lib/node_modules/ /usr/local/lib/node_modules/
-COPY --from=base --chown=api:api /opt/app /opt/app
+COPY --from=base --chown=api:api /opt /opt
 
 USER 1000
 
-WORkDIR /opt/app
+WORkDIR /opt/services/app
+
 CMD ["node", "index.js"]

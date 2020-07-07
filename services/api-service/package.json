@@ -14,7 +14,8 @@
   "release": {
     "dryRun": false,
     "branches": [
-      "master", "esatterwhite/FAKE-0004"
+      "master",
+      "esatterwhite/FAKE-0004"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -28,8 +29,10 @@
       [
         "@esatterwhite/semantic-release-docker",
         {
-          "registry": "quay.io",
-          "project": "esatterwhite",
+          "registry": "us.gcr.io",
+          "project": "logdna-k8s",
+          "imageName": "fake",
+          "context": "../../",
           "tags": []
         }
       ],
@@ -37,8 +40,10 @@
     ]
   },
   "devDependencies": {
-    "@esatterwhite/semantic-release-docker": "link:../../packages/sementic-release-docker",
-    "semantic-release-docker": "^2.2.0",
+    "@esatterwhite/semantic-release-docker": "workspace:*",
     "tap": "^14.10.7"
-  }
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {}
 }
