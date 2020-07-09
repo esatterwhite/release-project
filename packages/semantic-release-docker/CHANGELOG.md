@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.0.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.0.0...@esatterwhite/semantic-release-docker@1.0.1) (2020-07-09)
+
+
+### Performance Improvements
+
+* **pgk:** add npm publish ([9bb0b31](https://github.com/esatterwhite/release-project/commit/9bb0b31325c0578460f7a0bc89b9642d590a4fcc))
+
 # @esatterwhite/semantic-release-docker 1.0.0 (2020-07-09)
 
 
