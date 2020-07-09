@@ -1,0 +1,49 @@
+{
+  "name": "@esatterwhite/semantic-release-docker",
+  "private": true,
+  "version": "0.0.0-development",
+  "description": "docker package",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap"
+  },
+  "keywords": [
+    "semantic-release"
+  ],
+  "author": "Eric Satterwhite <esatterwhite@wi.rr.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "tap": {},
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      ["@semantic-release/changelog",{
+        "changelogFile": "CHANGELOG.md"
+      }],
+      ["@semantic-release/git", {
+        "assets": ["package.json", "CHANGELOG.md", "pnpm-lock.yaml"]
+      }]
+    ]
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.5",
+    "execa": "^4.0.2",
+    "semantic-release": "^17.1.1",
+    "semver": "^7.3.2",
+    "tap": "^14.10.7"
+  },
+  "dependencies": {
+    "@semantic-release/error": "^2.2.0",
+    "debug": "^4.1.1",
+    "dockerode": "^3.2.0"
+  }
+}
