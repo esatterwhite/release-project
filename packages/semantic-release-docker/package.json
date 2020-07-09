@@ -24,12 +24,22 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@semantic-release/changelog",{
-        "changelogFile": "CHANGELOG.md"
-      }],
-      ["@semantic-release/git", {
-        "assets": ["package.json", "CHANGELOG.md", "pnpm-lock.yaml"]
-      }]
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md",
+            "pnpm-lock.yaml"
+          ]
+        }
+      ]
     ]
   },
   "devDependencies": {
@@ -45,5 +55,7 @@
     "@semantic-release/error": "^2.2.0",
     "debug": "^4.1.1",
     "dockerode": "^3.2.0"
-  }
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {}
 }
