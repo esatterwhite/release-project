@@ -1,3 +1,10 @@
+# @esatterwhite/semantic-release-docker [1.2.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.1.0...@esatterwhite/semantic-release-docker@1.2.0) (2020-07-09)
+
+
+### Features
+
+* **pkg:** allows for publishing ([db66b3d](https://github.com/esatterwhite/release-project/commit/db66b3d67ce63f81d7c173a625cd84c480dcd6f6))
+
 # @esatterwhite/semantic-release-docker [1.1.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.0.1...@esatterwhite/semantic-release-docker@1.1.0) (2020-07-09)
 
 
