@@ -1,3 +1,10 @@
+# @esatterwhite/semantic-release-docker [1.1.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.0.1...@esatterwhite/semantic-release-docker@1.1.0) (2020-07-09)
+
+
+### Features
+
+* **pgk:** remove overrides ([ba4da66](https://github.com/esatterwhite/release-project/commit/ba4da6688c5c015f18cb0f57694959b1fe373b06))
+
 ## @esatterwhite/semantic-release-docker [1.0.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.0.0...@esatterwhite/semantic-release-docker@1.0.1) (2020-07-09)
 
 
