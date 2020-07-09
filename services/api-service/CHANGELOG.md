@@ -5,6 +5,13 @@
 
 * **release:** correcting docker build ([bbd5b5f](https://github.com/esatterwhite/release-project/commit/bbd5b5fc95ffb0ed6781d8f4329e0eef25c71ffa))
 
+## api-service [1.0.2](https://github.com/esatterwhite/release-project/compare/api-service@1.0.1...api-service@1.0.2) (2020-07-09)
+
+
+### Bug Fixes
+
+* **release:** correcting docker build ([bbd5b5f](https://github.com/esatterwhite/release-project/commit/bbd5b5fc95ffb0ed6781d8f4329e0eef25c71ffa))
+
 ## api-service [1.0.2](https://github.com/esatterwhite/release-project/compare/api-service@1.0.1...api-service@1.0.2) (2020-07-05)
 
 
