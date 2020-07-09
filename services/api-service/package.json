@@ -29,11 +29,15 @@
       [
         "@esatterwhite/semantic-release-docker",
         {
-          "registry": "us.gcr.io",
-          "project": "logdna-k8s",
+          "registry": "quay.io",
+          "project": "esatterwhite",
           "imageName": "fake",
           "context": "../../",
-          "tags": []
+          "tags": [
+            "latest",
+            "{major}-latest",
+            "{version}"
+          ]
         }
       ],
       "@semantic-release/git"
