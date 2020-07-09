@@ -1,5 +1,5 @@
 {
-  "name": "@esatterwhite/semantic-release-docker",
+  "name": "semantic-release-docker",
   "private": false,
   "version": "1.2.0",
   "description": "docker package",
