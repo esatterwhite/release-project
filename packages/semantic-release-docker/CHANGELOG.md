@@ -1,3 +1,15 @@
+# @esatterwhite/semantic-release-docker [1.3.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.2.0...@esatterwhite/semantic-release-docker@1.3.0) (2020-07-09)
+
+
+### Bug Fixes
+
+* **pkg:** fix the package name ([c93b25e](https://github.com/esatterwhite/release-project/commit/c93b25eac9b97e1fcc8c13485ec6fb03c1bc3b81))
+
+
+### Features
+
+* **pkg:** can't publish to github? ([bcb908a](https://github.com/esatterwhite/release-project/commit/bcb908a2380ed56c9670b022a8058f10a7317d9a))
+
 # semantic-release-docker 1.0.0 (2020-07-09)
 
 
