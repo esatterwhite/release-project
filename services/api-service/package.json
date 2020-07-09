@@ -25,18 +25,10 @@
           "changelogFile": "CHANGELOG.md"
         }
       ],
-      [
-        "sematic-release-docker",
-        {
-          "name": "esatterwhite/api-service",
-          "registryUrl": "quay.io"
-        }
-      ],
       "@semantic-release/git"
     ]
   },
   "devDependencies": {
-    "semantic-release-docker": "^2.2.0",
     "tap": "^14.10.7"
   },
   "dependencies": {},
