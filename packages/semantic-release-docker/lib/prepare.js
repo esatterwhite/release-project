@@ -17,5 +17,6 @@ async function dockerPrepare(opts, config, context) {
   , cwd: cwd
   })
   context.logger.info('building image', image.name)
+
   await image.build(path.join(cwd, opts.context))
 }
