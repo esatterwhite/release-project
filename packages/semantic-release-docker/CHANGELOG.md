@@ -1,3 +1,10 @@
+# @esatterwhite/semantic-release-docker [1.4.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.3.0...@esatterwhite/semantic-release-docker@1.4.0) (2020-07-10)
+
+
+### Features
+
+* **docker:** whitspace fix ([72b5083](https://github.com/esatterwhite/release-project/commit/72b50834041da9f7598139c31d7928a556196f50))
+
 # @esatterwhite/semantic-release-docker [1.3.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.2.0...@esatterwhite/semantic-release-docker@1.3.0) (2020-07-09)
 
 
