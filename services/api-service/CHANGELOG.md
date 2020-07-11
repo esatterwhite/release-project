@@ -1,3 +1,10 @@
+## api-service [1.2.11](https://github.com/esatterwhite/release-project/compare/api-service@1.2.10...api-service@1.2.11) (2020-07-11)
+
+
+### Bug Fixes
+
+* **release:** incorrect image name ([94c9054](https://github.com/esatterwhite/release-project/commit/94c9054a58fbbe7f737a58c6a9a99f9fd6b45480))
+
 ## api-service [1.2.10](https://github.com/esatterwhite/release-project/compare/api-service@1.2.9...api-service@1.2.10) (2020-07-11)
 
 
