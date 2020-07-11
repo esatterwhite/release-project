@@ -31,7 +31,7 @@ async function publish(opts, config, context) {
   }
 
   const vars = {
-    ...version.next
+    ...versions.next
   , ...versions
   }
 
