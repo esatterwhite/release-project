@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.4.4](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.3...@esatterwhite/semantic-release-docker@1.4.4) (2020-07-11)
+
+
+### Bug Fixes
+
+* **lint:** invalid variable names ([ac36c09](https://github.com/esatterwhite/release-project/commit/ac36c0952227364d5e1174c4133c06c5115e7b63))
+
 ## @esatterwhite/semantic-release-docker [1.4.3](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.2...@esatterwhite/semantic-release-docker@1.4.3) (2020-07-11)
 
 
