@@ -32,6 +32,8 @@
     "tap": "^14.10.7"
   },
   "dependencies": {
-    "@esatterwhite/semantic-release-docker": "workspace:^1.4.0"
-  }
+    "@esatterwhite/semantic-release-docker": "1.4.1"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {}
 }

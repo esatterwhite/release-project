@@ -1,3 +1,23 @@
+# api-service [1.1.0](https://github.com/esatterwhite/release-project/compare/api-service@1.0.2...api-service@1.1.0) (2020-07-11)
+
+
+### Bug Fixes
+
+* **ci:** fix npm auth in docker file ([00652f1](https://github.com/esatterwhite/release-project/commit/00652f1b500ae896da135b1d5a4f203f86c2f3aa))
+
+
+### Features
+
+* **release:**  publish to github packages ([e2f4417](https://github.com/esatterwhite/release-project/commit/e2f4417e112793649251ce5a5ef65cce403980b7))
+
+
+
+
+
+### Dependencies
+
+* **@esatterwhite/semantic-release-docker:** upgraded to 1.4.1
+
 ## api-service [1.0.2](https://github.com/esatterwhite/release-project/compare/api-service@1.0.1...api-service@1.0.2) (2020-07-09)
 
 
