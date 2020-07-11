@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.4.2](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.1...@esatterwhite/semantic-release-docker@1.4.2) (2020-07-11)
+
+
+### Bug Fixes
+
+* **debug:** debugging conext ([f0f7f03](https://github.com/esatterwhite/release-project/commit/f0f7f039319cbec978c0148b042ae60b851e0629))
+
 ## @esatterwhite/semantic-release-docker [1.4.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.0...@esatterwhite/semantic-release-docker@1.4.1) (2020-07-11)
 
 
