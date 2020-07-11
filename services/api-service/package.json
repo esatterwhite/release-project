@@ -59,6 +59,7 @@
   "dependencies": {
     "@esatterwhite/semantic-release-docker": "workspace:1.5.2",
     "@semantic-release/exec": "^5.0.0",
-    "@semantic-release/npm": "^7.0.5"
+    "@semantic-release/npm": "^7.0.5",
+    "semantic-release": "^17.1.1"
   }
 }
