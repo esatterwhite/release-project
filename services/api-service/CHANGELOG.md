@@ -1,3 +1,18 @@
+## api-service [1.2.7](https://github.com/esatterwhite/release-project/compare/api-service@1.2.6...api-service@1.2.7) (2020-07-11)
+
+
+### Bug Fixes
+
+* **release:** fix the fix ([a648c9d](https://github.com/esatterwhite/release-project/commit/a648c9d31bf32921b20851d5cda5a2b04b1b1609))
+
+
+
+
+
+### Dependencies
+
+* **@esatterwhite/semantic-release-docker:** upgraded to 1.4.7
+
 ## api-service [1.2.6](https://github.com/esatterwhite/release-project/compare/api-service@1.2.5...api-service@1.2.6) (2020-07-11)
 
 
