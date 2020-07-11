@@ -1,3 +1,5 @@
+dependencies:
+  '@esatterwhite/semantic-release-docker': 'link:../../packages/semantic-release-docker'
 devDependencies:
   tap: 14.10.7
 lockfileVersion: 5.1
@@ -2074,4 +2076,5 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
+  '@esatterwhite/semantic-release-docker': 'workspace:^1.4.0'
   tap: ^14.10.7
