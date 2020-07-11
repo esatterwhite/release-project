@@ -3887,7 +3887,7 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
-  '@esatterwhite/semantic-release-docker': 'workspace:1.5.2'
+  '@esatterwhite/semantic-release-docker': 1.5.2
   '@semantic-release/exec': ^5.0.0
   '@semantic-release/npm': ^7.0.5
   semantic-release: ^17.1.1

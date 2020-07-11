@@ -1,3 +1,10 @@
+# api-service [1.4.0](https://github.com/esatterwhite/release-project/compare/api-service@1.3.1...api-service@1.4.0) (2020-07-11)
+
+
+### Features
+
+* **release:** move all the things to prepare cmd ([5a9ba91](https://github.com/esatterwhite/release-project/commit/5a9ba913d5edaaa321defa80425051e2e81bbcbe))
+
 ## api-service [1.3.1](https://github.com/esatterwhite/release-project/compare/api-service@1.3.0...api-service@1.3.1) (2020-07-11)
 
 
