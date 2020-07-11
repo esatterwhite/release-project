@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.4.6](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.5...@esatterwhite/semantic-release-docker@1.4.6) (2020-07-11)
+
+
+### Bug Fixes
+
+* **release:** var fix ([21b88fa](https://github.com/esatterwhite/release-project/commit/21b88faa9c1484dfc7d213289ea7929056671835))
+
 ## @esatterwhite/semantic-release-docker [1.4.5](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.4...@esatterwhite/semantic-release-docker@1.4.5) (2020-07-11)
 
 
