@@ -25,6 +25,10 @@
           "changelogFile": "CHANGELOG.md"
         }
       ],
+      ["semantic-release-docker", {
+        "name": "release-poject/api-service"
+      , "registryUrl": "docker.pkg.github.com/esatterwhite"
+      }],
       "@semantic-release/git"
     ]
   },
