@@ -18,12 +18,13 @@ async function verify(config, context) {
     const error = new Error(
       'Both ENV vars DOCKER_REGISTRY_USER and DOCKER_REGISTRY_PASSWORD must be set'
     )
-    const error.code = 'EAUTH'
+    error.code = 'EAUTH'
     throw error
   }
 
   const {stdout} = await execa('docker', [
     'login'
+  , config.registry || ''
   , '-u', USERNAME
   , '-p', PASSWORD
   ])
