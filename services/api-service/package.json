@@ -29,7 +29,7 @@
         "@esatterwhite/semantic-release-docker",
         {
           "registry": "docker.pkg.github.com/esatterwhite",
-          "imageName": "release-poject/api-service",
+          "imageName": "release-project/api-service",
           "args": {
             "GITHUB_TOKEN": true
           }
