@@ -42,6 +42,7 @@
         }
       ],
       ["@semantic-release/exec", {
+        "prepareCmd": "rm pnpm-lock.yaml",
         "publishCmd": "npx pnpm install"
       }],
       [
