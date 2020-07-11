@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.5.2](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.5.1...@esatterwhite/semantic-release-docker@1.5.2) (2020-07-11)
+
+
+### Bug Fixes
+
+* **docker:** adding logging ([c248b64](https://github.com/esatterwhite/release-project/commit/c248b64ca86bae89e625d21bf51e2fb90160c6b4))
+
 ## @esatterwhite/semantic-release-docker [1.5.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.5.0...@esatterwhite/semantic-release-docker@1.5.1) (2020-07-11)
 
 
