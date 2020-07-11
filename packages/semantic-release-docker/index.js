@@ -34,6 +34,7 @@ async function buildConfig(config, context) {
     dockerfile = 'Dockerfile'
   , nocache = false
   , tags = ['latest', '{major}-latest', '{version}']
+  , args = {}
   , build
   , registry
   , project
@@ -49,6 +50,7 @@ async function buildConfig(config, context) {
     tags
   , registry
   , name
+  , args
   , dockerfile
   , nocache
   , context
