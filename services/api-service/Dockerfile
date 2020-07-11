@@ -3,8 +3,13 @@ FROM node:12 as base
 
 WORKDIR /opt/app
 
-
+ARG GITHUB_TOKEN
 COPY ./pnpm-lock.yaml ./package.json /opt/app/
+
+RUN touch .npmrc \
+  && echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc \
+  && echo "@esatterwhite:registry=https://npm.pkg.github.com/" >> .npmrc \
+
 RUN npx pnpm install
 COPY . /opt/app
 

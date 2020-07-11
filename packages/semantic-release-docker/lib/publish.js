@@ -21,6 +21,12 @@ async function publish(opts, config, context) {
   , cwd: cwd
   })
 
+  if(opts.args) {
+    for (const [key, value] of Object.entries(opts.args)) {
+      image.arg(key, value)
+    }
+  }
+
   const vars = {
     major: semverNext.major
   , minor: semverNext.minor
