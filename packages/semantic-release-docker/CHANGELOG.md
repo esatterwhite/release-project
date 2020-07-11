@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.4.5](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.4...@esatterwhite/semantic-release-docker@1.4.5) (2020-07-11)
+
+
+### Bug Fixes
+
+* **release:** more lint, reference error ([83e8187](https://github.com/esatterwhite/release-project/commit/83e81876e7f6060d2f8d96ebe3ecd6e102fc8d48))
+
 ## @esatterwhite/semantic-release-docker [1.4.4](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.3...@esatterwhite/semantic-release-docker@1.4.4) (2020-07-11)
 
 
