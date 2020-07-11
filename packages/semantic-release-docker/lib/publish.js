@@ -10,7 +10,10 @@ module.exports = publish
 
 async function publish(opts, config, context) {
   const {commits, lastRelease, nextRelease, cwd} = context
-  const semverNext = semver.parse(nextRelease.version)
+  const versions = {
+    next: semver.parse(nextRelease.version)
+  , previous: semver.parse(lastRelease.version)
+  }
 
   const image = new docker.Image({
     registry: opts.registry
@@ -28,14 +31,11 @@ async function publish(opts, config, context) {
   }
 
   const vars = {
-    major: semverNext.major
-  , minor: semverNext.minor
-  , patch: semverNext.patch
-  , version: semverNext.version
-  , previous: semverPrevious
-  , next: semverNext
+    ...version.next
+  , ...versions
   }
 
+  console.log(varss)
 
   const templates = opts.tags.map((template) => {
     return string.template(template)(vars)
