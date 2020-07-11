@@ -1,3 +1,18 @@
+## api-service [1.2.4](https://github.com/esatterwhite/release-project/compare/api-service@1.2.3...api-service@1.2.4) (2020-07-11)
+
+
+### Bug Fixes
+
+* **release:** fixing lock file ([a5b1e9f](https://github.com/esatterwhite/release-project/commit/a5b1e9f2bdf3c193c3451b1cb5379c997b6ccaf8))
+
+
+
+
+
+### Dependencies
+
+* **@esatterwhite/semantic-release-docker:** upgraded to 1.4.5
+
 ## api-service [1.2.3](https://github.com/esatterwhite/release-project/compare/api-service@1.2.2...api-service@1.2.3) (2020-07-11)
 
 
