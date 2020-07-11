@@ -1,5 +1,6 @@
 dependencies:
   '@esatterwhite/semantic-release-docker': 'link:../../packages/semantic-release-docker'
+  '@semantic-release/exec': 5.0.0
   '@semantic-release/npm': 7.0.5
 devDependencies:
   tap: 14.10.7
@@ -252,6 +253,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==
+  /@semantic-release/exec/5.0.0:
+    dependencies:
+      '@semantic-release/error': 2.2.0
+      aggregate-error: 3.0.1
+      debug: 4.1.1
+      execa: 4.0.3
+      lodash: 4.17.19
+      parse-json: 5.0.0
+    dev: false
+    engines:
+      node: '>=10.18'
+    peerDependencies:
+      semantic-release: '>=16.0.0 <18.0.0'
+    resolution:
+      integrity: sha512-t7LWXIvDJQbuGCy2WmMG51WyaGSLTvZBv9INvcI4S0kn+QjnnVVUMhcioIqhb0r3yqqarMzHVcABFug0q0OXjw==
   /@semantic-release/npm/7.0.5:
     dependencies:
       '@semantic-release/error': 2.2.0
@@ -637,7 +653,6 @@ packages:
   /debug/4.1.1:
     dependencies:
       ms: 2.1.2
-    dev: true
     resolution:
       integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   /decamelize/1.2.0:
@@ -1343,7 +1358,6 @@ packages:
     resolution:
       integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   /ms/2.1.2:
-    dev: true
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
   /nerf-dart/1.0.0:
@@ -2490,5 +2504,6 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   '@esatterwhite/semantic-release-docker': 'workspace:1.5.2'
+  '@semantic-release/exec': ^5.0.0
   '@semantic-release/npm': ^7.0.5
   tap: ^14.10.7
