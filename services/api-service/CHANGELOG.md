@@ -1,3 +1,13 @@
+# api-service [1.3.0](https://github.com/esatterwhite/release-project/compare/api-service@1.2.11...api-service@1.3.0) (2020-07-11)
+
+
+### Features
+
+* **dep:** semantic-release@17.1.1 ([a42110b](https://github.com/esatterwhite/release-project/commit/a42110b78168023a1b8af3eb8adb41d24d40ba8f))
+* **dep:** semantic-release/exec@5.0.0 ([098a52f](https://github.com/esatterwhite/release-project/commit/098a52ffa59536f10b67f68de82b1b7ba8878dbf))
+* **npm:** add npm plugin to increement versions ([b4dd7b0](https://github.com/esatterwhite/release-project/commit/b4dd7b004b48ffb4a229dc7d35690dede465a9b3))
+* **release:** use semantic-release/exec to update lock file ([98c1c14](https://github.com/esatterwhite/release-project/commit/98c1c142d62a774adf054a726fa302958268a84e))
+
 ## api-service [1.2.11](https://github.com/esatterwhite/release-project/compare/api-service@1.2.10...api-service@1.2.11) (2020-07-11)
 
 
