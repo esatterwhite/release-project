@@ -1,12 +1,12 @@
 'use strict'
 
 const {inspect} = require('util')
+const execa = require('execa')
 const debug = require('debug')('semantic-release:docker:verify')
 
 module.exports = verify
 
 async function verify(opts, config, context) {
-  console.log(inspect(context, {depth: 100}))
   const {env, logger} = context
   const PASSWORD = env.DOCKER_REGISTRY_PASSWORD || env.GITHUB_TOKEN
   const USERNAME = env.DOCKER_REGISTRY_USER
