@@ -1,6 +1,5 @@
 'use strict'
 
-const {inspect} = require('util')
 const semver = require('semver')
 const docker = require('./docker/index.js')
 const string = require('./lang/string/index.js')
@@ -10,9 +9,8 @@ const debug = require('debug')('semantic-release:docker:publish')
 module.exports = publish
 
 async function publish(opts, config, context) {
-  console.log(inspect(context, {depth: 100}))
   const {commits, lastRelease, nextRelease, cwd} = context
-  const semverNext = semver.parse(nextRelease)
+  const semverNext = semver.parse(nextRelease.version)
 
   const image = new docker.Image({
     registry: opts.registry
