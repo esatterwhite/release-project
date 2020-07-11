@@ -41,9 +41,6 @@
           "npmPublish": false
         }
       ],
-      ["@semantic-release/exec", {
-        "prepareCmd": "rm pnpm-lock.yaml && npx pnpm install"
-      }],
       [
         "@semantic-release/git",
         {
@@ -60,7 +57,7 @@
     "tap": "^14.10.7"
   },
   "dependencies": {
-    "@esatterwhite/semantic-release-docker": "workspace:1.5.2",
+    "@esatterwhite/semantic-release-docker": "workspace:*",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/npm": "^7.0.5",
     "semantic-release": "^17.1.1"
