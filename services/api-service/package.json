@@ -42,7 +42,7 @@
     "tap": "^14.10.7"
   },
   "dependencies": {
-    "@esatterwhite/semantic-release-docker": "1.4.2"
+    "@esatterwhite/semantic-release-docker": "1.4.3"
   },
   "peerDependencies": {},
   "optionalDependencies": {}

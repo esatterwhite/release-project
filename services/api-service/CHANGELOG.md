@@ -1,3 +1,13 @@
+## api-service [1.2.2](https://github.com/esatterwhite/release-project/compare/api-service@1.2.1...api-service@1.2.2) (2020-07-11)
+
+
+
+
+
+### Dependencies
+
+* **@esatterwhite/semantic-release-docker:** upgraded to 1.4.3
+
 ## api-service [1.2.1](https://github.com/esatterwhite/release-project/compare/api-service@1.2.0...api-service@1.2.1) (2020-07-11)
 
 
