@@ -64,7 +64,7 @@ class Image {
     , path.join(this.opts.cwd, this.opts.dockerfile)
     , context
     ]
-    console.log(cmd)
+    console.log(cmd, this.opts.args)
     const out = await execa('docker', cmd)
     const {stdout} = out
     const [algo, sha] = stdout.split(':')
