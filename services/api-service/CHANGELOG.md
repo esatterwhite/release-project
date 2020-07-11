@@ -1,3 +1,10 @@
+# api-service [1.2.0](https://github.com/esatterwhite/release-project/compare/api-service@1.1.0...api-service@1.2.0) (2020-07-11)
+
+
+### Features
+
+* **release:** re-add docker relase ([36057a5](https://github.com/esatterwhite/release-project/commit/36057a5f64084d4f047514f54d994c83d10d5215))
+
 # api-service [1.1.0](https://github.com/esatterwhite/release-project/compare/api-service@1.0.2...api-service@1.1.0) (2020-07-11)
 
 
