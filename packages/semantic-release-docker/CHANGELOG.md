@@ -1,3 +1,17 @@
+# @esatterwhite/semantic-release-docker [1.5.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.7...@esatterwhite/semantic-release-docker@1.5.0) (2020-07-11)
+
+
+### Bug Fixes
+
+* **docker:** fix missing dependancy ([5cc3036](https://github.com/esatterwhite/release-project/commit/5cc3036c2828c32e4669f42b54974a1a61e9b58e))
+* **docker:** fix the fix ([f7dbc52](https://github.com/esatterwhite/release-project/commit/f7dbc52371bf5f4cf0fb641ed6fa643a07ec2d21))
+* **docker:** fixing output? ([3bc3ee4](https://github.com/esatterwhite/release-project/commit/3bc3ee4d9fd0d0642c34c2cfa85c6e3cee672248))
+
+
+### Features
+
+* **docker:** enable docker login during verify step ([86d5bfc](https://github.com/esatterwhite/release-project/commit/86d5bfc30503480f5c5fb79e1282a85a6dc2104c))
+
 ## @esatterwhite/semantic-release-docker [1.4.7](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.6...@esatterwhite/semantic-release-docker@1.4.7) (2020-07-11)
 
 
