@@ -24,8 +24,8 @@ async function publish(opts, config, context) {
   , cwd: cwd
   })
 
-  if(opts.args) {
-    for (const [key, value] of Object.entries(opts.args)) {
+  if(config.args) {
+    for (const [key, value] of Object.entries(config.args)) {
       image.arg(key, value)
     }
   }
@@ -37,7 +37,7 @@ async function publish(opts, config, context) {
 
   console.log(vars)
 
-  const templates = opts.tags.map((template) => {
+  const tags = opts.tags.map((template) => {
     return string.template(template)(vars)
   })
 

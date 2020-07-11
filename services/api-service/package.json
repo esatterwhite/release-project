@@ -28,14 +28,16 @@
       [
         "@esatterwhite/semantic-release-docker",
         {
-          "registryUrl": "docker.pkg.github.com/esatterwhite",
-          "name": "release-poject/api-service",
+          "registry": "docker.pkg.github.com/esatterwhite",
+          "imageName": "release-poject/api-service",
           "args": {
             "GITHUB_TOKEN": true
           }
         }
       ],
-      "@semantic-release/git"
+      ["@semantic-release/git", {
+        "assets": ["packages.json", "pnpm-lock.yaml", "CHANGELOG.md"]
+      }]
     ]
   },
   "devDependencies": {
