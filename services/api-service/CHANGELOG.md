@@ -1,3 +1,18 @@
+## api-service [1.2.3](https://github.com/esatterwhite/release-project/compare/api-service@1.2.2...api-service@1.2.3) (2020-07-11)
+
+
+### Bug Fixes
+
+* **lint:** invalid variable names ([ac36c09](https://github.com/esatterwhite/release-project/commit/ac36c0952227364d5e1174c4133c06c5115e7b63))
+
+
+
+
+
+### Dependencies
+
+* **@esatterwhite/semantic-release-docker:** upgraded to 1.4.4
+
 ## api-service [1.2.2](https://github.com/esatterwhite/release-project/compare/api-service@1.2.1...api-service@1.2.2) (2020-07-11)
 
 
