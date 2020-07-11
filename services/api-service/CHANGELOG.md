@@ -1,3 +1,10 @@
+## api-service [1.2.5](https://github.com/esatterwhite/release-project/compare/api-service@1.2.4...api-service@1.2.5) (2020-07-11)
+
+
+### Bug Fixes
+
+* **api:** fix some whitspace ([5c047c1](https://github.com/esatterwhite/release-project/commit/5c047c1dec2b21e0fe883229a117c662b50a5cf5))
+
 ## api-service [1.2.4](https://github.com/esatterwhite/release-project/compare/api-service@1.2.3...api-service@1.2.4) (2020-07-11)
 
 
