@@ -35,7 +35,7 @@ async function publish(opts, config, context) {
   , ...versions
   }
 
-  console.log(varss)
+  console.log(vars)
 
   const templates = opts.tags.map((template) => {
     return string.template(template)(vars)
