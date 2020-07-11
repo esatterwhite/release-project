@@ -35,17 +35,28 @@
           }
         }
       ],
-      ["@semantic-release/git", {
-        "assets": ["packages.json", "pnpm-lock.yaml", "CHANGELOG.md"]
-      }]
+      [
+        "@semantic-release/npm", {
+          "npmPublish": false
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "packages.json",
+            "pnpm-lock.yaml",
+            "CHANGELOG.md"
+          ]
+        }
+      ]
     ]
   },
   "devDependencies": {
     "tap": "^14.10.7"
   },
   "dependencies": {
-    "@esatterwhite/semantic-release-docker": "1.4.6"
-  },
-  "peerDependencies": {},
-  "optionalDependencies": {}
+    "@esatterwhite/semantic-release-docker": "workspace:1.5.2",
+    "@semantic-release/npm": "^7.0.5"
+  }
 }
