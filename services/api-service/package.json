@@ -41,6 +41,9 @@
           "npmPublish": false
         }
       ],
+      ["@semantic-release/exec", {
+        "publishCmd": "npx pnpm install"
+      }],
       [
         "@semantic-release/git",
         {
