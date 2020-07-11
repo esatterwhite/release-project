@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.5.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.5.0...@esatterwhite/semantic-release-docker@1.5.1) (2020-07-11)
+
+
+### Bug Fixes
+
+* **docker:** pass build args through to the build ([4280c25](https://github.com/esatterwhite/release-project/commit/4280c25eaf1056549cf3b347502e8a3f66a9a8a1))
+
 # @esatterwhite/semantic-release-docker [1.5.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.7...@esatterwhite/semantic-release-docker@1.5.0) (2020-07-11)
 
 
