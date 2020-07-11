@@ -1,3 +1,10 @@
+## api-service [1.3.1](https://github.com/esatterwhite/release-project/compare/api-service@1.3.0...api-service@1.3.1) (2020-07-11)
+
+
+### Bug Fixes
+
+* **release:** remove the lock file prior to installing ([72a0a7a](https://github.com/esatterwhite/release-project/commit/72a0a7a3af66113d0f064264fb2575ccaee5cc7a))
+
 # api-service [1.3.0](https://github.com/esatterwhite/release-project/compare/api-service@1.2.11...api-service@1.3.0) (2020-07-11)
 
 
