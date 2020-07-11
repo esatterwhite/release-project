@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.4.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.4.0...@esatterwhite/semantic-release-docker@1.4.1) (2020-07-11)
+
+
+### Bug Fixes
+
+* **ci:** fix npm auth in docker file ([00652f1](https://github.com/esatterwhite/release-project/commit/00652f1b500ae896da135b1d5a4f203f86c2f3aa))
+
 # @esatterwhite/semantic-release-docker [1.4.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.3.0...@esatterwhite/semantic-release-docker@1.4.0) (2020-07-10)
 
 
