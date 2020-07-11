@@ -1,3 +1,10 @@
+## api-service [1.4.1](https://github.com/esatterwhite/release-project/compare/api-service@1.4.0...api-service@1.4.1) (2020-07-11)
+
+
+### Bug Fixes
+
+* **release:** remove the exec step ([13a981a](https://github.com/esatterwhite/release-project/commit/13a981a86378b5adf00f0c3fce4ee81a888d31b1))
+
 # api-service [1.4.0](https://github.com/esatterwhite/release-project/compare/api-service@1.3.1...api-service@1.4.0) (2020-07-11)
 
 
