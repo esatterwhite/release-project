@@ -5,7 +5,7 @@ const debug = require('debug')('semantic-release:docker:verify')
 
 module.exports = verify
 
-async function verify(config, context) {
+async function verify(opts, config, context) {
   console.log(inspect(context, {depth: 100}))
   const {env, logger} = context
   const PASSWORD = env.DOCKER_REGISTRY_PASSWORD || env.GITHUB_TOKEN
