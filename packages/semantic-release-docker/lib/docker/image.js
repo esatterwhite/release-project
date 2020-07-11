@@ -73,7 +73,10 @@ class Image {
   }
 
   async tag(tag) {
+      console.log(['tag', this.name, `${this.repo}:${tag}`])
       await execa('docker', ['tag', this.name, `${this.repo}:${tag}`])
+      const {stdout} = await execa('docker', ['images'])
+      console.log(stdout)
       await execa('docker', ['push', `${this.repo}:${tag}`])
   }
 

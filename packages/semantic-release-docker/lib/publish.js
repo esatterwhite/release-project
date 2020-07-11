@@ -9,7 +9,7 @@ const debug = require('debug')('semantic-release:docker:publish')
 module.exports = publish
 
 async function publish(opts, config, context) {
-  const {commits, lastRelease, nextRelease, cwd} = context
+  const {commits, lastRelease, nextRelease, cwd, logger} = context
   const versions = {
     next: semver.parse(nextRelease.version)
   , previous: semver.parse(lastRelease.version)
@@ -35,13 +35,11 @@ async function publish(opts, config, context) {
   , ...versions
   }
 
-  console.log(vars)
-
   const tags = opts.tags.map((template) => {
     return string.template(template)(vars)
   })
 
-  debug('tagging docker image', image.id)
+  logger.info('tagging docker image', image.id)
   for (const tag of tags) {
     context.logger.info(`pushing image: ${image.repo} tag: ${tag}`)
     await image.tag(tag)
