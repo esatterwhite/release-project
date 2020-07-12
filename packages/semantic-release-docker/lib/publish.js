@@ -3,8 +3,6 @@
 const semver = require('semver')
 const docker = require('./docker/index.js')
 const string = require('./lang/string/index.js')
-const object = require('./lang/object/index.js')
-const debug = require('debug')('semantic-release:docker:publish')
 
 module.exports = publish
 
@@ -24,7 +22,7 @@ async function publish(opts, config, context) {
   , cwd: cwd
   })
 
-  if(config.args) {
+  if (config.args) {
     for (const [key, value] of Object.entries(config.args)) {
       image.arg(key, value)
     }

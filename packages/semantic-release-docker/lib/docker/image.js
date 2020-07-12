@@ -3,7 +3,6 @@
 const path = require('path')
 const crypto = require('crypto')
 const execa = require('execa')
-const debug = require('debug')('semantic-release:docker:image')
 
 class Image {
   constructor(opts) {
@@ -67,17 +66,17 @@ class Image {
     console.log(cmd, this.opts.args)
     const out = await execa('docker', cmd)
     const {stdout} = out
-    const [algo, sha] = stdout.split(':')
+    const [_, sha] = stdout.split(':')
     this.sha = sha.substring(0, 12)
     return stdout
   }
 
   async tag(tag) {
-      console.log(['tag', this.name, `${this.repo}:${tag}`])
-      await execa('docker', ['tag', this.name, `${this.repo}:${tag}`])
-      const {stdout} = await execa('docker', ['images'])
-      console.log(stdout)
-      await execa('docker', ['push', `${this.repo}:${tag}`])
+    console.log(['tag', this.name, `${this.repo}:${tag}`])
+    await execa('docker', ['tag', this.name, `${this.repo}:${tag}`])
+    const {stdout} = await execa('docker', ['images'])
+    console.log(stdout)
+    await execa('docker', ['push', `${this.repo}:${tag}`])
   }
 
   async push() {

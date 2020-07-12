@@ -1,8 +1,6 @@
 'use strict'
 
-const {inspect} = require('util')
 const execa = require('execa')
-const debug = require('debug')('semantic-release:docker:verify')
 
 module.exports = verify
 

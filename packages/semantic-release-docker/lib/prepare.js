@@ -2,7 +2,6 @@
 
 const path = require('path')
 const docker = require('./docker/index.js')
-const debug = require('debug')('semantic-release:docker:prepare')
 
 module.exports = dockerPrepare
 

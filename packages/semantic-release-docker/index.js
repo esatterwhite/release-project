@@ -1,6 +1,5 @@
 'use strict'
 
-const {format} = require('util')
 const crypto = require('crypto')
 const dockerPrepare = require('./lib/prepare.js')
 const dockerVerify = require('./lib/verify.js')
@@ -35,7 +34,6 @@ async function buildConfig(config, context) {
   , nocache = false
   , tags = ['latest', '{major}-latest', '{version}']
   , args = {}
-  , build
   , registry
   , project
   , imageName
