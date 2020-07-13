@@ -42,6 +42,7 @@ class Image {
 
   async inspect() {
     const out = await exec('docker', ['inspect', this.name])
+    return out
   }
 
   async build(context = '.') {
@@ -84,7 +85,12 @@ class Image {
     console.log(out)
   }
 
-  async rm() {
+  async clean() {
+    const images = execa('docker', ['images', this.repo, '-q'])
+    const rm = execa('xargs', ['docker', 'rmi', '-f'])
+    rm.stdout.pipe(process.stdout)
+    images.stdout.pipe(rm.stdin)
+    return rm
   }
 }
 

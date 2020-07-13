@@ -7,7 +7,7 @@ const string = require('./lang/string/index.js')
 module.exports = publish
 
 async function publish(opts, config, context) {
-  const {commits, lastRelease, nextRelease, cwd, logger} = context
+  const {lastRelease, nextRelease, cwd, logger} = context
   const versions = {
     next: semver.parse(nextRelease.version)
   , previous: semver.parse(lastRelease.version)
@@ -21,12 +21,6 @@ async function publish(opts, config, context) {
   , build_id: opts.build
   , cwd: cwd
   })
-
-  if (config.args) {
-    for (const [key, value] of Object.entries(config.args)) {
-      image.arg(key, value)
-    }
-  }
 
   const vars = {
     ...versions.next
@@ -42,4 +36,6 @@ async function publish(opts, config, context) {
     context.logger.info(`pushing image: ${image.repo} tag: ${tag}`)
     await image.tag(tag)
   }
+
+  await image.clean()
 }

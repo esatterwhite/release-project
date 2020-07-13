@@ -1,7 +1,6 @@
 'use strict'
 
 const execa = require('execa')
-
 module.exports = verify
 
 async function verify(opts, config, context) {
@@ -14,7 +13,11 @@ async function verify(opts, config, context) {
     return true
   }
 
-  if (!(env.DOCKER_REGISTRY_USER && env.DOCKER_REGISTRY_PASSWORD)) {
+  let set = 0
+  if (USERNAME) set += 1
+  if (PASSWORD) set += 1
+
+  if (set !== 2) {
     const error = new Error(
       'Both ENV vars DOCKER_REGISTRY_USER and DOCKER_REGISTRY_PASSWORD must be set'
     )
@@ -22,14 +25,13 @@ async function verify(opts, config, context) {
     throw error
   }
 
-  const {stdout} = await execa('docker', [
+  await execa('docker', [
     'login'
   , config.registry || ''
   , '-u', USERNAME
   , '-p', PASSWORD
   ])
 
-  console.log(stdout)
   logger.success('docker login successful')
   return true
 }
