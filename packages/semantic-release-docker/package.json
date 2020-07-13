@@ -13,8 +13,7 @@
   "author": "Eric Satterwhite <esatterwhite@wi.rr.com>",
   "license": "MIT",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -26,17 +25,16 @@
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/npm": "^7.0.5",
-    "execa": "^4.0.2",
+    "@esatterwhite/eslint-config-reasonable": "^1.0.2",
+    "@semantic-release/error": "^2.2.0",
+    "eslint": "^7.4.0",
     "semantic-release": "^17.1.1",
-    "semver": "^7.3.2",
     "tap": "^14.10.7"
   },
   "dependencies": {
-    "@esatterwhite/eslint-config-reasonable": "^1.0.2",
-    "@semantic-release/error": "^2.2.0",
     "debug": "^4.1.1",
-    "dockerode": "^3.2.0",
-    "eslint": "^7.4.0"
+    "execa": "^4.0.2",
+    "semver": "^7.3.2"
   },
   "peerDependencies": {},
   "optionalDependencies": {}
