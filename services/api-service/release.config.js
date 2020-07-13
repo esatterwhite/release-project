@@ -1,3 +1,4 @@
+'use strict'
 module.exports = {
   dryRun: false
 , branches: [
@@ -14,6 +15,7 @@ module.exports = {
   , ['@esatterwhite/semantic-release-docker', {
       registry: 'docker.pkg.github.com/esatterwhite'
     , imageName: 'release-project/api-service'
+    , tags: ['{major}-latest', '{major}.{minor}-latest', 'latest', '{version}']
     , args: {
         GITHUB_TOKEN: true
       }

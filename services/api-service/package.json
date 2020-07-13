@@ -17,7 +17,9 @@
   "dependencies": {
     "@esatterwhite/eslint-config-reasonable": "^1.0.2",
     "@esatterwhite/semantic-release-docker": "workspace:*",
+    "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
     "@semantic-release/npm": "^7.0.5",
     "eslint": "^7.4.0",
     "semantic-release": "^17.1.1"
