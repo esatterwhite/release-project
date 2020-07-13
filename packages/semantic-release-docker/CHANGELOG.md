@@ -1,3 +1,10 @@
+# @esatterwhite/semantic-release-docker [1.6.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.5.2...@esatterwhite/semantic-release-docker@1.6.0) (2020-07-13)
+
+
+### Features
+
+* **docker:** enable build args and image cleaning ([5b46c0e](https://github.com/esatterwhite/release-project/commit/5b46c0e71a3ca1259a243dcf076c1313fc905e55))
+
 ## @esatterwhite/semantic-release-docker [1.5.2](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.5.1...@esatterwhite/semantic-release-docker@1.5.2) (2020-07-11)
 
 
