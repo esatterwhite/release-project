@@ -35,6 +35,7 @@
     "@esatterwhite/eslint-config-reasonable": "^1.0.2",
     "@semantic-release/error": "^2.2.0",
     "debug": "^4.1.1",
+    "dockerode": "^3.2.0",
     "eslint": "^7.4.0"
   }
 }
