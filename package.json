@@ -52,8 +52,6 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0",
     "multi-semantic-release": "^2.1.0",
     "semantic-release": "^17.1.1",
     "tap": "^14.10.7"
