@@ -1,3 +1,10 @@
+# api-service [1.5.0](https://github.com/esatterwhite/release-project/compare/api-service@1.4.2...api-service@1.5.0) (2020-07-13)
+
+
+### Features
+
+* **release:** adds tag templates for docker images ([726c0dd](https://github.com/esatterwhite/release-project/commit/726c0dd74eca3aa2f557140b61601b3e1b9dc9db))
+
 ## api-service [1.4.2](https://github.com/esatterwhite/release-project/compare/api-service@1.4.1...api-service@1.4.2) (2020-07-13)
 
 
