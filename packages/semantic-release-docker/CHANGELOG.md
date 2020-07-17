@@ -1,3 +1,10 @@
+## @esatterwhite/semantic-release-docker [1.6.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.6.0...@esatterwhite/semantic-release-docker@1.6.1) (2020-07-17)
+
+
+### Bug Fixes
+
+* **docker:** cleaning up the packages a bit ([133fab5](https://github.com/esatterwhite/release-project/commit/133fab578b28bc380845615bb47911aa7932e550))
+
 # @esatterwhite/semantic-release-docker [1.6.0](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.5.2...@esatterwhite/semantic-release-docker@1.6.0) (2020-07-13)
 
 
