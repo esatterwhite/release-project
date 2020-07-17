@@ -1,13 +1,13 @@
 dependencies:
+  '@semantic-release/error': 2.2.0
   '@semantic-release/github': 7.0.7_semantic-release@17.1.1
   debug: 4.1.1
   execa: 4.0.3
+  semantic-release: 17.1.1_semantic-release@17.1.1
   semver: 7.3.2
 devDependencies:
   '@esatterwhite/eslint-config-reasonable': 1.0.2_21a04a3627df7522220e4958a1e44f81
-  '@semantic-release/error': 2.2.0
   eslint: 7.4.0
-  semantic-release: 17.1.1_semantic-release@17.1.1
   tap: 14.10.7
 lockfileVersion: 5.1
 packages:
