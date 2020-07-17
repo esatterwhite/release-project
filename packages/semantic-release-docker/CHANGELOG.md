@@ -1,3 +1,5 @@
+## @esatterwhite/semantic-release-docker [1.6.2](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.6.1...@esatterwhite/semantic-release-docker@1.6.2) (2020-07-17)
+
 ## @esatterwhite/semantic-release-docker [1.6.1](https://github.com/esatterwhite/release-project/compare/@esatterwhite/semantic-release-docker@1.6.0...@esatterwhite/semantic-release-docker@1.6.1) (2020-07-17)
 
 

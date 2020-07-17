@@ -1,7 +1,7 @@
 {
   "name": "@esatterwhite/semantic-release-docker",
   "private": false,
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "docker package",
   "main": "index.js",
   "scripts": {
@@ -37,5 +37,7 @@
     "debug": "^4.1.1",
     "execa": "^4.0.2",
     "semver": "^7.3.2"
-  }
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {}
 }
