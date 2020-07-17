@@ -1,3 +1,10 @@
+## api-service [1.5.4](https://github.com/esatterwhite/release-project/compare/api-service@1.5.3...api-service@1.5.4) (2020-07-17)
+
+
+### Bug Fixes
+
+* **server:** Add better signal handling ([097fa8a](https://github.com/esatterwhite/release-project/commit/097fa8a85201db5eb2640d71cb122c17e885f49c))
+
 ## api-service [1.5.3](https://github.com/esatterwhite/release-project/compare/api-service@1.5.2...api-service@1.5.3) (2020-07-17)
 
 
