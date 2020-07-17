@@ -40,5 +40,6 @@ module.exports = {
       , 'pnpm-lock.yaml'
       ]
     }]
+  , ['@semantic-release/github', null]
   ]
 }
