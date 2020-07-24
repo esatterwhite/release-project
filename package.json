@@ -41,7 +41,6 @@
     "semantic"
   ],
   "workspaces": [
-    "packages/semantic-release-docker",
     "services/api-service"
   ],
   "author": "Eric Satterwhite <esatterwhite@wir.rr.com>",

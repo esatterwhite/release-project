@@ -6,15 +6,32 @@ const execa = require('execa')
 
 class Image {
   constructor(opts) {
-    this.sha = opts.sha || null
+    const {
+      registry = null
+    , project = null
+    , name = null
+    , sha = null
+    , build_id = crypto.randomBytes(10).toString('hex')
+    , dockerfile = 'Dockerfile'
+    , cwd = process.cwd()
+    , context = '.'
+    } = opts || {}
+
+    if (!name || typeof name !== 'string') {
+      const error = new TypeError('Docker Image "name" is required and must be a string')
+      throw error
+    }
+
+    this.sha = sha
     this.opts = {
-      registry: opts.registry
-    , project: opts.project
-    , name: opts.name
-    , build_id: opts.build_id || crypto.randomBytes(10).toString('hex')
-    , args: new Map()
-    , dockerfile: opts.dockerfile || 'Dockerfile'
-    , cwd: opts.cwd || process.cwd()
+      args: new Map()
+    , registry: registry
+    , project: project
+    , name: name
+    , build_id: build_id
+    , dockerfile: dockerfile
+    , context: context
+    , cwd: cwd
     }
   }
 
@@ -35,17 +52,21 @@ class Image {
     return `${this.repo}:${this.opts.build_id}`
   }
 
+  get context() {
+    return this.opts.context
+  }
+
+  set context(ctx) {
+    this.opts.context = ctx
+    return this.opts.context
+  }
+
   arg(key, val) {
     this.opts.args.set(key, val)
     return this
   }
 
-  async inspect() {
-    const out = await exec('docker', ['inspect', this.name])
-    return out
-  }
-
-  async build(context = '.') {
+  get build_cmd() {
     const args = []
     for (const [name, value] of this.opts.args.entries()) {
       if (value === true) {
@@ -62,19 +83,23 @@ class Image {
     , ...args
     , '-f'
     , path.join(this.opts.cwd, this.opts.dockerfile)
-    , context
+    , this.context
     ]
-    console.log(cmd, this.opts.args)
-    const out = await execa('docker', cmd)
+    return cmd
+  }
+
+  async build() {
+    const out = await execa('docker', this.build_cmd)
     const {stdout} = out
     const [_, sha] = stdout.split(':')
     this.sha = sha.substring(0, 12)
-    return stdout
+    return this.sha
   }
 
-  async tag(tag) {
+  async tag(tag, push = true) {
     await execa('docker', ['tag', this.name, `${this.repo}:${tag}`])
-    const {stdout} = await execa('docker', ['images'])
+    if (!push) return
+
     await execa('docker', ['push', `${this.repo}:${tag}`])
   }
 
@@ -85,7 +110,6 @@ class Image {
   async clean() {
     const images = execa('docker', ['images', this.repo, '-q'])
     const rm = execa('xargs', ['docker', 'rmi', '-f'])
-    rm.stdout.pipe(process.stdout)
     images.stdout.pipe(rm.stdin)
     return rm
   }
