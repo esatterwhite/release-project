@@ -6,7 +6,7 @@ const string = require('./lang/string/index.js')
 
 module.exports = publish
 
-async function publish(opts, config, context) {
+async function publish(opts, context) {
   const {lastRelease, nextRelease, cwd, logger} = context
   const versions = {
     next: semver.parse(nextRelease.version)

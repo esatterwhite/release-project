@@ -1,11 +1,14 @@
 {
-  "name": "@esatterwhite/semantic-release-docker",
+  "name": "@codedependant/semantic-release-docker",
   "private": false,
   "version": "1.6.4",
   "description": "docker package",
   "main": "index.js",
   "scripts": {
-    "test": "tap"
+    "test": "docker-compose -f compose/base.yml -f compose/test.yml up --exit-code-from semantic-release --force-recreate --remove-orphans",
+    "start": "docker-compose -f compose/base.yml -f compose/dev.yml up --force-recreate --remove-orphans --build",
+    "stop": "docker-compose -f compose/base.yml -f compose/dev.yml down",
+    "tap": "tap"
   },
   "keywords": [
     "semantic-release"
@@ -20,10 +23,37 @@
     "url": "git+ssh://git@github.com/esatterwhite/release-project.git",
     "directory": "packages/semantic-release-docker"
   },
-  "tap": {},
+  "tap": {
+    "esm": false,
+    "ts": false,
+    "jsx": false,
+    "timeout": 60,
+    "browser": false,
+    "check-coverage": true,
+    "lines": 95,
+    "branches": 95,
+    "statements": 95,
+    "functions": 95,
+    "files": [
+      "test/unit",
+      "test/integration"
+    ],
+    "coverage-report": [
+      "text",
+      "text-summary",
+      "json",
+      "html"
+    ],
+    "nyc-arg": [
+      "--exclude=coverage/",
+      "--exclude=test/"
+    ]
+  },
   "devDependencies": {
     "@esatterwhite/eslint-config-reasonable": "^1.0.2",
     "eslint": "^7.4.0",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2",
     "tap": "^14.10.7"
   },
   "dependencies": {

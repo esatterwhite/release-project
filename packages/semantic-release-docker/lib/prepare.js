@@ -3,10 +3,9 @@
 const path = require('path')
 const docker = require('./docker/index.js')
 
-// comments
 module.exports = dockerPrepare
 
-async function dockerPrepare(opts, config, context) {
+async function dockerPrepare(opts, context) {
   const {cwd} = context
   const image = new docker.Image({
     registry: opts.registry
@@ -26,4 +25,5 @@ async function dockerPrepare(opts, config, context) {
   context.logger.info('building image', image.name)
 
   await image.build(path.join(cwd, opts.context))
+  return image
 }
