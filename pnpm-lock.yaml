@@ -1,5 +1,4 @@
 dependencies:
-  '@codedependant/semantic-release-docker': 1.0.0
   '@esatterwhite/eslint-config-reasonable': 1.0.2_21a04a3627df7522220e4958a1e44f81
   '@semantic-release/changelog': 5.0.1_semantic-release@17.1.1
   '@semantic-release/git': 9.0.0_semantic-release@17.1.1
@@ -261,15 +260,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-UTCFOxC3FsFHb7lkRMVvgLzaRVamXuAs2Tz4wajva4WxtVY82eZeaUBtC2Zt95FU9TiznuC0Zk35tsim8jeVpg==
-  /@codedependant/semantic-release-docker/1.0.0:
-    dependencies:
-      '@semantic-release/error': 2.2.0
-      execa: 4.0.3
-      semantic-release: 17.1.1_semantic-release@17.1.1
-      semver: 7.3.2
-    dev: false
-    resolution:
-      integrity: sha512-tF2/ftxRdRzSi+T7vimp6966VR+Ci68O5K30zgMrvNuhRERKMKTZOoT8I//ey7RHN+/A3Te55YlUIOjg9IpJhQ==
   /@esatterwhite/eslint-config-reasonable/1.0.2_21a04a3627df7522220e4958a1e44f81:
     dependencies:
       '@semantic-release/github': 7.0.7_semantic-release@17.1.1
@@ -1556,6 +1546,7 @@ packages:
       onetime: 5.1.0
       signal-exit: 3.0.3
       strip-final-newline: 2.0.0
+    dev: true
     engines:
       node: '>=10'
     resolution:
@@ -4475,7 +4466,6 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
-  '@codedependant/semantic-release-docker': ^1.0.0
   '@esatterwhite/eslint-config-reasonable': ^1.0.2
   '@semantic-release/changelog': ^5.0.1
   '@semantic-release/git': ^9.0.0

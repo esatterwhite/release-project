@@ -60,7 +60,6 @@
   },
   "tap": {},
   "dependencies": {
-    "@codedependant/semantic-release-docker": "^1.0.0",
     "@esatterwhite/eslint-config-reasonable": "^1.0.2",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
