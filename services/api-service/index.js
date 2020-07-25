@@ -27,7 +27,6 @@ async function onSignal(signal) {
   }
 }
 
-
 if (require.main === module) {
   server.listen(PORT)
   process.on('SIGINT', onSignal)
