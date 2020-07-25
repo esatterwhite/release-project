@@ -1,3 +1,7 @@
+### Features
+
+* **config:** adding release config package ([80aa8f0](https://github.com/esatterwhite/release-project/commit/80aa8f072a302591c6cd890c5eb567ae2fc010c6))
+
 ## api-service [1.5.5](https://github.com/esatterwhite/release-project/compare/api-service@1.5.4...api-service@1.5.5) (2020-07-17)
 
 
