@@ -1,4 +1,8 @@
 'use strict'
+
+/**
+ * @author Eric Satterwhite
+ **/
 const http = require('http')
 const PORT = process.env.PORT || 3001
 
