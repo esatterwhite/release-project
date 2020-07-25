@@ -15,7 +15,9 @@
     "tap": "^14.10.7"
   },
   "release": {
-    "branches": ["master"],
+    "branches": [
+      "master"
+    ],
     "extends": "@internal/release-config-sample"
   },
   "dependencies": {
@@ -27,5 +29,7 @@
     "@internal/release-config-sample": "workspace:*",
     "eslint": "^7.4.0",
     "semantic-release": "^17.1.1"
-  }
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {}
 }
