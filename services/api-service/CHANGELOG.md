@@ -1,3 +1,11 @@
+# api-service [1.9.0](https://github.com/esatterwhite/release-project/compare/api-service@1.8.1...api-service@1.9.0) (2020-07-25)
+
+
+### Features
+
+* **doc:** update module docs ([a94535b](https://github.com/esatterwhite/release-project/commit/a94535b469003e033fb6b7e39f019e4f0854c70b))
+* **style:** clean up styles ([420e932](https://github.com/esatterwhite/release-project/commit/420e93225661ea2a85f7717e9bf3d0729602d0b6))
+
 Version 1.8.1: 2020-07-24
 
 ### Features
