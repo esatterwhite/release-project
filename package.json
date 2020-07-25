@@ -9,6 +9,12 @@
     "lint:fix": "npm run lint -- --fix",
     "release": "multi-semantic-release"
   },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "extends": "@internal/release-config-sample"
+  },
   "eslintConfig": {
     "root": true,
     "extends": "@esatterwhite/eslint-config-reasonable",

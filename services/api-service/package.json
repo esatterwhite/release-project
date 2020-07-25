@@ -14,12 +14,6 @@
   "devDependencies": {
     "tap": "^14.10.7"
   },
-  "release": {
-    "branches": [
-      "master"
-    ],
-    "extends": "@internal/release-config-sample"
-  },
   "dependencies": {
     "@esatterwhite/eslint-config-reasonable": "^1.0.2",
     "@semantic-release/changelog": "^5.0.1",
