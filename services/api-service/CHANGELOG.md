@@ -1,3 +1,5 @@
+Version 1.8.1: 2020-07-24
+
 ### Features
 
 * **constants:** Add a new constant. ([7377438](https://github.com/esatterwhite/release-project/commit/73774385f330781e17a500379ce81a733db87ff8))
