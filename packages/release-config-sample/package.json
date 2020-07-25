@@ -1,0 +1,41 @@
+{
+  "name": "@internal/release-config-sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap"
+  },
+  "keywords": [],
+  "author": "Eric Satterwhite <esatterwhite@wi.rr.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tap": "^14.10.8"
+  },
+  "release": {
+    "branches": ["master", "next"]
+  , "plugins": [
+      ["@semantic-release/commit-analyzer", {}]
+    , ["@semantic-release/release-notes-generator", {}]
+
+    , ["@semantic-release/changelog", {
+        "changelogFile": "CHANGELOG.md"
+      }]
+
+    , ["@semantic-release/npm", {
+        "npmPublish": true
+      }]
+    , ["@semantic-release/git", {
+        "assets": [
+          "packages.json"
+        , "pnpm-lock.yaml"
+        , "CHANGELOG.md"
+        ]
+      }]
+    ]
+
+  },
+  "dependencies": {
+    "@codedependant/semantic-release-docker": "^1.0.0"
+  }
+}

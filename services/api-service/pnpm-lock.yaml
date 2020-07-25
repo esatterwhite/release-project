@@ -1,6 +1,6 @@
 dependencies:
   '@esatterwhite/eslint-config-reasonable': 1.0.2_21a04a3627df7522220e4958a1e44f81
-  '@esatterwhite/semantic-release-docker': 'link:../../packages/semantic-release-docker'
+  '@internal/release-config-sample': 'link:../../packages/release-config-sample'
   '@semantic-release/changelog': 5.0.1_semantic-release@17.1.1
   '@semantic-release/exec': 5.0.0_semantic-release@17.1.1
   '@semantic-release/git': 9.0.0_semantic-release@17.1.1
@@ -4542,7 +4542,7 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   '@esatterwhite/eslint-config-reasonable': ^1.0.2
-  '@esatterwhite/semantic-release-docker': 'workspace:*'
+  '@internal/release-config-sample': 'workspace:*'
   '@semantic-release/changelog': ^5.0.1
   '@semantic-release/exec': ^5.0.0
   '@semantic-release/git': ^9.0.0
