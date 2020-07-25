@@ -54,12 +54,13 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "multi-semantic-release": "^2.1.0",
+    "multi-semantic-release": "^2.4.1",
     "semantic-release": "^17.1.1",
     "tap": "^14.10.7"
   },
   "tap": {},
   "dependencies": {
+    "@codedependant/semantic-release-docker": "^1.0.0",
     "@esatterwhite/eslint-config-reasonable": "^1.0.2",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
