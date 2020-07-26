@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     'Content-Type': 'application/json'
   })
 
-  res.write(JSON.stringify({message: 'ok'}))
+  res.write(JSON.stringify({message: http.STATUS_CODES[200]}))
   res.end()
 })
 
