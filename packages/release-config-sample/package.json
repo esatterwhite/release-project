@@ -10,32 +10,54 @@
   "author": "Eric Satterwhite <esatterwhite@wi.rr.com>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^7.5.0",
+    "semantic-release": "^17.1.1",
     "tap": "^14.10.8"
   },
   "release": {
-    "branches": ["master", "next"]
-  , "plugins": [
-      ["@semantic-release/commit-analyzer", {}]
-    , ["@semantic-release/release-notes-generator", {}]
-
-    , ["@semantic-release/changelog", {
-        "changelogFile": "CHANGELOG.md"
-      }]
-
-    , ["@semantic-release/npm", {
-        "npmPublish": true
-      }]
-    , ["@semantic-release/git", {
-        "assets": [
-          "packages.json"
-        , "pnpm-lock.yaml"
-        , "CHANGELOG.md"
-        ]
-      }]
+    "branches": [
+      "master",
+      "next"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {}
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {}
+      ],
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "packages.json",
+            "pnpm-lock.yaml",
+            "CHANGELOG.md"
+          ]
+        }
+      ]
     ]
-
   },
   "dependencies": {
-    "@codedependant/semantic-release-docker": "^1.0.0"
+    "@codedependant/semantic-release-docker": "^1.0.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "github:semantic-release/github",
+    "@semantic-release/release-notes-generator": "^9.0.1"
   }
 }
