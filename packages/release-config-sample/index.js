@@ -40,7 +40,6 @@ function transform(commit) {
   commit.type = typeOf(commit.type)
   commit.shortHash = commit.hash.substring(0, 7);
   commit.issuesUrl = issuesUrl
-  console.log(commit)
   return commit
 }
 
@@ -90,7 +89,7 @@ module.exports = {
 
   , ['@semantic-release/git', {
       assets: ['packages.json', 'pnpm-lock.yaml', 'package-lock.json', 'CHANGELOG.md']
-    , message: `chore(release): ${year}-${month}-${day}, Version <%= nextRelease.version %> [skip ci]`
+    , message: `chore(release): ${year}-${month}-${day}, Version <%= nextRelease.version %> [skip ci]\n\n<%= nextRelease.notes %>`
     }]
   ]
 }
