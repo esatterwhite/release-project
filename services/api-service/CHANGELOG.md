@@ -1,3 +1,15 @@
+# api-service [1.10.0](https://github.com/esatterwhite/release-project/compare/api-service@1.9.0...api-service@1.10.0) (2020-07-27)
+
+
+### Documentation
+
+* **README:** update the readme ([bad18a9](https://github.com/esatterwhite/release-project/commit/bad18a9d1ca0106d76a8b6d40f40fd7a81b4ec5a)) - Eric Satterwhite
+
+
+### Performance Improvements
+
+* server performance imporvements ([7f5a7f3](https://github.com/esatterwhite/release-project/commit/7f5a7f3e1480ea59a4e8fdfc5de9fb6af7cca7f7)) - Eric Satterwhite, closes [LOG-1234](https://logdna.atlassian.net/browse/LOG-1234) [INFRA-4567](https://logdna.atlassian.net/browse/INFRA-4567) [REL-9999](https://logdna.atlassian.net/browse/REL-9999)
+
 # api-service [1.9.0](https://github.com/esatterwhite/release-project/compare/api-service@1.8.1...api-service@1.9.0) (2020-07-25)
 
 
