@@ -39,7 +39,9 @@ function typeOf(type) {
 function transform(commit) {
   commit.type = typeOf(commit.type)
   commit.shortHash = commit.hash.substring(0, 7);
-  commit.issuesUrl = issuesUrl
+  for (const ref of commit.references) {
+    ref.issuesUrl = issuesUrl
+  }
   return commit
 }
 
