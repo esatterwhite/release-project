@@ -46,7 +46,8 @@ function transform(commit) {
 }
 
 module.exports = {
-  parserOpts: {
+  npmPublish: false
+, parserOpts: {
     noteKeywords: ['BREAKING', 'BREAKING CHANGE', 'BREAKING CHANGES']
   , issuePrefixes: ['LOG-', 'INFRA-', 'REL-']
   , referenceActions: [
@@ -71,23 +72,20 @@ module.exports = {
   , {type: 'lib', release: 'patch'}
   , {type: 'perf', release: 'minor'}
   ]
+, docker: {
+    registry: 'quay.io'
+  , project: 'esatterwhite'
+  , tags: ['{major}-latest', '{major}.{minor}-latest', 'latest', '{version}']
+  , args: {
+      GITHUB_PACKAGES_TOKEN: true
+    }
+  }
 , plugins: [
     ['@semantic-release/commit-analyzer', null]
   , ['@semantic-release/release-notes-generator', null]
   , ['@semantic-release/changelog', null]
-
-  , ['@codedependant/semantic-release-docker', {
-      registry: 'us.gcr.io'
-    , project: 'logdna-k8s'
-    , tags: ['{major}-latest', '{major}.{minor}-latest', 'latest', '{version}']
-    , args: {
-        GITHUB_PACKAGES_TOKEN: true
-      }
-    }]
-
-  , ['@semantic-release/npm', {
-      npmPublish: false
-    }]
+  , ['@codedependant/semantic-release-docker', null]
+  , ['@semantic-release/npm', null]
 
   , ['@semantic-release/git', {
       assets: ['services/**/{packages.json,pnpm-lock.yaml,package-lock.json,CHANGELOG.md}', '!**/node_modules/**']

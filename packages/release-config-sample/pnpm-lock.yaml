@@ -1,5 +1,5 @@
 dependencies:
-  '@codedependant/semantic-release-docker': 1.0.1
+  '@codedependant/semantic-release-docker': 2.0.0
   '@semantic-release/changelog': 5.0.1_semantic-release@17.1.1
   '@semantic-release/commit-analyzer': 8.0.1_semantic-release@17.1.1
   '@semantic-release/git': 9.0.0_semantic-release@17.1.1
@@ -253,7 +253,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ixV66KWfCI6GKoA/2H9v6bQdbfXEwwpOdQ8cRvb4F+eyvhlaHxWFMQB4+3d9QFJXZsiiiqVrewNV0DFEQpyT4Q==
-  /@codedependant/semantic-release-docker/1.0.1:
+  /@codedependant/semantic-release-docker/2.0.0:
     dependencies:
       '@semantic-release/error': 2.2.0
       execa: 4.0.3
@@ -261,7 +261,7 @@ packages:
       semver: 7.3.2
     dev: false
     resolution:
-      integrity: sha512-IgqMLXKAb7LQ98XxgTJZz1mOaGik18VxlaiSoTIFqDdnPoGt2Spra++kGqMx1shrtPH59TZgV72QDuJH/F2exw==
+      integrity: sha512-cj/LoadR60Q/HrLUnWplYizw69F1s+NRalvvsZVNRypU2h6OIa3AtVUrAk2TuJXNn9xxob4IVqV4Gzpja5LF8Q==
   /@nodelib/fs.scandir/2.1.3:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
@@ -4033,7 +4033,7 @@ packages:
       tarball: 'https://codeload.github.com/semantic-release/github/tar.gz/32654fb26dbba597170408ab181255ae863ed748'
     version: 0.0.0-development
 specifiers:
-  '@codedependant/semantic-release-docker': ^1.0.1
+  '@codedependant/semantic-release-docker': ^2.0.0
   '@semantic-release/changelog': ^5.0.1
   '@semantic-release/commit-analyzer': ^8.0.1
   '@semantic-release/git': ^9.0.0
