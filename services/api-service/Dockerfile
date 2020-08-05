@@ -14,7 +14,6 @@ RUN npx pnpm install
 COPY . /opt/app
 
 # 0001-RELEASE
-# RELEASE
 FROM debian:buster-slim as release
 
 RUN groupadd --gid 1000 api \
