@@ -1,6 +1,5 @@
 dependencies:
   '@answerbook/multi-release': 1.0.0
-  '@codedependant/semantic-release-docker': 'link:../semantic-release-docker'
 devDependencies:
   '@esatterwhite/eslint-config-reasonable': 1.0.2_eslint@7.5.0
   eslint: 7.5.0
@@ -4628,7 +4627,6 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   '@answerbook/multi-release': ^1.0.0
-  '@codedependant/semantic-release-docker': 'link:../semantic-release-docker'
   '@esatterwhite/eslint-config-reasonable': ^1.0.2
   eslint: ^7.5.0
   eslint-plugin-node: ^11.1.0

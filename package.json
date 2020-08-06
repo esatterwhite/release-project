@@ -68,7 +68,6 @@
   },
   "tap": {},
   "dependencies": {
-    "@answerbook/multi-release": "^1.0.0",
-    "@codedependant/semantic-release-docker": "link:../semantic-release-docker"
+    "@answerbook/multi-release": "^1.0.0"
   }
 }
