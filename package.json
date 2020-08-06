@@ -7,12 +7,11 @@
     "test": "tap",
     "lint": "eslint ./",
     "lint:fix": "npm run lint -- --fix",
-    "release": "multi-semantic-release"
+    "release": "multi-release"
   },
   "release": {
     "branches": [
-      "master",
-      "foo"
+      "master"
     ],
     "extends": "@internal/release-config-sample"
   },
@@ -63,11 +62,13 @@
   "devDependencies": {
     "@esatterwhite/eslint-config-reasonable": "^1.0.2",
     "eslint": "^7.5.0",
-    "multi-semantic-release": "^2.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-sensible": "^2.2.0",
     "tap": "^14.10.7"
   },
   "tap": {},
-  "dependencies": {}
+  "dependencies": {
+    "@answerbook/multi-release": "^1.0.0",
+    "@codedependant/semantic-release-docker": "link:../semantic-release-docker"
+  }
 }
