@@ -1,3 +1,66 @@
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
+## api-service [1.11.1](https://github.com/esatterwhite/release-project/compare/api-service@1.11.0...api-service@1.11.1) (2020-08-06)
+
+
+### Chores
+
+* **docker:** fixing the docker file ([f4c9553](https://github.com/esatterwhite/release-project/commit/f4c95537a930aae97b1e069c20b8347059fd6e5d)) - Eric Satterwhite
+
 # api-service [1.10.0](https://github.com/esatterwhite/release-project/compare/api-service@1.9.0...api-service@1.10.0) (2020-07-27)
 
 

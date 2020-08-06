@@ -1,7 +1,7 @@
 {
   "name": "api-service",
   "private": true,
-  "version": "1.10.0",
+  "version": "1.11.1",
   "description": "api service",
   "main": "index.js",
   "scripts": {
